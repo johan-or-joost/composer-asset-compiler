@@ -41,7 +41,7 @@ final class HashBuilder
      * @param string|null $seed
      * @return string|null
      */
-    public function forAsset(Asset $asset, string $seed = null): ?string
+    public function forAsset(Asset $asset, ?string $seed = null): ?string
     {
         $basePath = $asset->isValid() ? $asset->path() : null;
         if (!$basePath) {
